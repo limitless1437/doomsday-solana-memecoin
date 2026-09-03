@@ -1,0 +1,13 @@
+[package]
+name = "doomsday-token"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+solana-program = "1.18"
+solana-sdk = "1.18"
+spl-token = "4.0"
+spl-associated-token-account = "2.0"
+
+[lib]
+crate-type = ["cdylib"]
