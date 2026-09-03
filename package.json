@@ -1,0 +1,19 @@
+{
+  "name": "doomsday-token",
+  "version": "0.1.0",
+  "description": "Doomsday - A Solana meme coin",
+  "main": "index.js",
+  "scripts": {
+    "build": "cargo build --release",
+    "test": "cargo test",
+    "deploy:devnet": "solana program deploy --url devnet target/deploy/doomsday_token.so",
+    "deploy:mainnet": "solana program deploy --url mainnet-beta target/deploy/doomsday_token.so"
+  },
+  "keywords": ["solana", "memecoin", "spl-token"],
+  "author": "limitless1437",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.78.0",
+    "@solana/spl-token": "^0.3.8"
+  }
+}
